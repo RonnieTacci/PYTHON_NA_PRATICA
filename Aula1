@@ -5,3 +5,17 @@
     
     Ex de algoritmo: FAZER BATATA FRITA'''
 
+'''Fazer batata frita
+1- lavar e descascar as batatas
+2- cortar as batatas em tiras
+3- aquecer o oleo em uma penela
+4- colocar as batatas no oleo quente
+5- aguardar ate ficarem douradas
+    (condicionais)
+    SE estiverem douradas e crocantes
+      retirar as batatas do oleo
+    SENÃO   
+      deixar fritando por mais alguns minutos 
+6- escorrer o excesso do oleo em papel toalha
+7- salgar a gosto
+8- servir'''
