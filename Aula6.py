@@ -1,4 +1,4 @@
-#Comandos básicos do terminal e 
+#Comandos básicos do terminal
 
 
 ''' pwd - local/pasta que eu estou no momento
