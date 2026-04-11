@@ -36,3 +36,8 @@ print(luzAcesa)
  
  Preencha essas variasveis com informações de alguem,
  em seguida exiba o tipo de cada variavel.'''
+
+nome = "Ronnie Tacci"
+idade = 25
+altura = 1.70
+gostarDeProgramar = True
