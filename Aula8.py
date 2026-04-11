@@ -23,3 +23,16 @@ luzAcesa = False
 
 print(esta_chovendo)
 print(luzAcesa)
+
+
+
+#exercicio 1
+
+'''Crie 4 variaveis com os seguintes nomes:
+ - nome
+ - idade
+ - altura
+ - uma variavel booleana para representar se gosta de programar
+ 
+ Preencha essas variasveis com informações de alguem,
+ em seguida exiba o tipo de cada variavel.'''
