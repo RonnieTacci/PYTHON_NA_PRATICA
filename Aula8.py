@@ -41,3 +41,8 @@ nome = "Ronnie Tacci"
 idade = 25
 altura = 1.70
 gostarDeProgramar = True
+
+print(type(nome))
+print(type(idade))
+print(type(altura))
+print(type(gostarDeProgramar))
