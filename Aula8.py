@@ -52,3 +52,11 @@ print(type(gostarDeProgramar))
 exiba uma frase com todas essas informações usando f-string'''
 
 print(f"O meu nome é {nome}, eu tenho {idade}, {altura} de altura e se eu gosto de programar:{gostarDeProgramar}")
+
+
+''' Crie uma variavel chamada 'estuda_python' e atribua a ela um valor booleano
+Depois, exiba uma frase dizendo se a pessoa estuda python ou não.'''
+
+estuda_python = True
+
+print(f"Sr. Carlos está estudando python recentemente? {estuda_python}")
