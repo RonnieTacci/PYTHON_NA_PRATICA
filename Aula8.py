@@ -26,7 +26,7 @@ print(luzAcesa)
 
 
 
-#exercicio 1
+#exercicios
 
 '''Crie 4 variaveis com os seguintes nomes:
  - nome
@@ -46,3 +46,9 @@ print(type(nome))
 print(type(idade))
 print(type(altura))
 print(type(gostarDeProgramar))
+
+
+''' Usando as mesmas variasveis do exercicio anterior,
+exiba uma frase com todas essas informações usando f-string'''
+
+print(f"O meu nome é {nome}, eu tenho {idade}, {altura} de altura e se eu gosto de programar:{gostarDeProgramar}")
