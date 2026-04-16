@@ -33,3 +33,19 @@ elif nota >= 4.0:
 
 else:
     print("Reprovado.")
+
+#Exercicios
+
+'''Peça ao usuario para digitar a temparatura atual em Celsius.
+Se for maior ou igual a 30, exiba "Esta muito quente!".Se estiver
+acima ou igual a 20 e abaixo de 30, exiba "Esta agradavel!Se estives
+abaixo de 20 exiba "Esta muito frio!"'''
+
+temperatura = int(input("Informe a temperatura atual em Celsius: "))
+
+if temperatura >= 30:
+    print("Esta muito quente!")
+elif temperatura >= 20:
+    print("Esta agradavel!")
+else:
+    print("Esta muito frio!")
