@@ -69,3 +69,14 @@ dicionario = {
 
 print(f"Tipo do dicionario: {type(dicionario)}")
 print(dicionario)
+
+
+#Exercicios
+
+'''Crie uma lista chamada paises com alguns nomes de paises dentro dela.
+Em sewguida:
+- Adicione um novo pais ao fim da lista
+- Adicione um novo pais logo antes da posição 1
+- Remova um pais pelo nome
+- Remova um pais pelo indice
+- Mostre o total de paises na lista. '''
