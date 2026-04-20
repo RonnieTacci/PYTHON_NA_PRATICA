@@ -80,3 +80,38 @@ Em sewguida:
 - Remova um pais pelo nome
 - Remova um pais pelo indice
 - Mostre o total de paises na lista. '''
+
+pais = ["Brasil", "França", "Japão"]
+
+pais.append("Argentina") #adicionar no final da fila   -> append(valor)
+pais.insert(0, "Canadá") # adiciona na posição que voce escolher -> insert(posição, valor)
+print(pais)
+pais.remove("Japão") #remover pelo valor() -> .remove(valor)
+pais.pop(1) #remove pelo indice -> .pop(valor)
+print(pais)
+tamanho_pais = len(pais) # len(variavel) -> mostra quantidade dentro da lista
+print(tamanho_pais)
+
+
+'''Crie um dicionario que armazene as informações de um carro,
+informações essas que serão a marca, modelo e ano. Em seguida,
+exiba uma frase apresentando essas informações do carro, no seguinte formato:
+"O carro é um MARCA MODELO do ano ANO"'''
+
+carro = {
+    "marca" : "FIAT",
+    "modelo" : "UNO",
+    "ano" : 2007
+}
+
+print(f"O carro é um {carro["marca"]} {carro["modelo"]} do ano {carro["ano"]}")
+
+
+'''Crie uma lista com numeros repetidos, e atraves da conversão
+desta para um conjunto, elimine os valore duplicados.'''
+
+list_repetidos = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]
+conjun_convertido = set(list_repetidos) # conversão
+
+list_repetidos = list(conjun_convertido) # conversão
+print(list_repetidos)
