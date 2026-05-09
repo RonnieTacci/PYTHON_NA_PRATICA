@@ -13,15 +13,15 @@ def divisao(a , b):
 def exibir_menu():
     print("=== CALCULADORA ===")
     print("1 - SOMA")
-    print("1 - SUBTRAÇÃO")
-    print("1 - MULTIPLICAÇÃO")
+    print("2 - SUBTRAÇÃO")
+    print("3 - MULTIPLICAÇÃO")
     print("4 - DIVISÃO")
     print("0 - SAIR")
 
-valor_inicial = float(input("Digite o valor inicial: "))
+resultado_atual = float(input("Digite o valor inicial: "))
 
 while True:
-    print(f"Resultado atual: {valor_inicial}")
+    print(f"Resultado atual: {resultado_atual}")
     exibir_menu()
 
     opcao_escolhida = input("Escolha uma opção: ")
@@ -29,3 +29,14 @@ while True:
     if opcao_escolhida == "0":
         print("Encerrando a calculadora.")
         break
+
+    valor_operando = float(input("Digite o próximo valor do operando: "))
+
+    if opcao_escolhida == "1":
+        resultado_atual = soma(resultado_atual,valor_operando)
+    elif opcao_escolhida == "2":
+        resultado_atual = subtracao(resultado_atual,valor_operando)
+    elif opcao_escolhida == "3":
+        resultado_atual = multiplicacao(resultado_atual,valor_operando)
+    elif opcao_escolhida == "4":
+        resultado_atual = divisao(resultado_atual,valor_operando)
