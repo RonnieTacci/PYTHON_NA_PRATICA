@@ -18,6 +18,8 @@ def exibir_menu():
     print("4 - DIVISÃO")
     print("0 - SAIR")
 
+opcoes_validas = {"1", "2", "3", "4", "0"}
+
 resultado_atual = float(input("Digite o valor inicial: "))
 
 while True:
@@ -29,6 +31,13 @@ while True:
     if opcao_escolhida == "0":
         print("Encerrando a calculadora.")
         break
+
+    if opcao_escolhida not in opcoes_validas:       #not in -> não pertença
+        print("\nOpção inválida.")
+        print("Opções válidas: 1, 2, 3, 4 e 0 ")
+
+        continue        #não executa o restante, volta o while
+
 
     valor_operando = float(input("Digite o próximo valor do operando: "))
 
