@@ -33,7 +33,7 @@ while True:
         break
 
     if opcao_escolhida not in opcoes_validas:       #not in -> não pertença
-        print("\nOpção inválida.")
+        print("\n0Opção inválida.")
         print("Opções válidas: 1, 2, 3, 4 e 0 ")
 
         continue        #não executa o restante, volta o while
