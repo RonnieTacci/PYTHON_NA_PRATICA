@@ -41,13 +41,17 @@ while True:
         break
 
     if opcao_escolhida not in opcoes_validas:       #not in -> não pertença
-        print("\n0Opção inválida.")
-        print("Opções válidas: 1, 2, 3, 4 e 0 ")
+        print("\nOpção inválida.")
+        print("Opções válidas: 1, 2, 3, 4 e 0\n ")
 
         continue        #não executa o restante, volta o while
 
+    try:
+        valor_operando = float(input("Digite o próximo valor do operando: "))
+    except ValueError:
+        print("Número inválido.")
+        continue
 
-    valor_operando = float(input("Digite o próximo valor do operando: "))
 
     if opcao_escolhida == "1":
         resultado_atual = soma(resultado_atual,valor_operando)
