@@ -60,4 +60,7 @@ while True:
     elif opcao_escolhida == "3":
         resultado_atual = multiplicacao(resultado_atual,valor_operando)
     elif opcao_escolhida == "4":
-        resultado_atual = divisao(resultado_atual,valor_operando)
+        try:
+            resultado_atual = divisao(resultado_atual,valor_operando)
+        except ZeroDivisionError:
+            print("Não se pode dividir por zero.")
