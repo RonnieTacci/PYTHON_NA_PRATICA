@@ -25,42 +25,51 @@ def formatar_resultado(resultado):
     
     return resultado
 
-opcoes_validas = {"1", "2", "3", "4", "0"}
-
-resultado_atual = float(input("Digite o valor inicial: "))
-
-while True:
-    resultado_formatado = formatar_resultado(resultado_atual)
-    print(f"Resultado atual: {resultado_formatado}")
-    exibir_menu()
-
-    opcao_escolhida = input("Escolha uma opção: ")
-
-    if opcao_escolhida == "0":
-        print("Encerrando a calculadora.")
-        break
-
-    if opcao_escolhida not in opcoes_validas:       #not in -> não pertença
-        print("\nOpção inválida.")
-        print("Opções válidas: 1, 2, 3, 4 e 0\n ")
-
-        continue        #não executa o restante, volta o while
+def main():
+    opcoes_validas = {"1", "2", "3", "4", "0"}
 
     try:
-        valor_operando = float(input("Digite o próximo valor do operando: "))
+        resultado_atual = float(input("Digite o valor inicial: "))
     except ValueError:
-        print("Número inválido.")
-        continue
+        print("Valor inicial invalido.")
+        return
 
+    while True:
+        resultado_formatado = formatar_resultado(resultado_atual)
+        print(f"Resultado atual: {resultado_formatado}")
+        exibir_menu()
 
-    if opcao_escolhida == "1":
-        resultado_atual = soma(resultado_atual,valor_operando)
-    elif opcao_escolhida == "2":
-        resultado_atual = subtracao(resultado_atual,valor_operando)
-    elif opcao_escolhida == "3":
-        resultado_atual = multiplicacao(resultado_atual,valor_operando)
-    elif opcao_escolhida == "4":
+        opcao_escolhida = input("Escolha uma opção: ")
+
+        if opcao_escolhida == "0":
+            print("Encerrando a calculadora.")
+            break
+
+        if opcao_escolhida not in opcoes_validas:       #not in -> não pertença
+            print("\nOpção inválida.")
+            print("Opções válidas: 1, 2, 3, 4 e 0\n ")
+
+            continue        #não executa o restante, volta o while
+
         try:
-            resultado_atual = divisao(resultado_atual,valor_operando)
-        except ZeroDivisionError:
-            print("Não se pode dividir por zero.")
+            valor_operando = float(input("Digite o próximo valor do operando: "))
+        except ValueError:
+            print("Número inválido.")
+            continue
+
+
+        if opcao_escolhida == "1":
+            resultado_atual = soma(resultado_atual,valor_operando)
+        elif opcao_escolhida == "2":
+            resultado_atual = subtracao(resultado_atual,valor_operando)
+        elif opcao_escolhida == "3":
+            resultado_atual = multiplicacao(resultado_atual,valor_operando)
+        elif opcao_escolhida == "4":
+            try:
+                resultado_atual = divisao(resultado_atual,valor_operando)
+            except ZeroDivisionError:
+                print("Não se pode dividir por zero.")
+
+
+
+main()
