@@ -1,23 +1,19 @@
-carros = [
-    {
-        "placa": "CDC-2026",
-        "cor": "Verde",
-        "modelo": "Corolla",
-        "ano": 2026
-    },
-    {
-        "placa": "IOF2V26",
-        "cor": "Prata",
-        "modelo": "Kwid",
-        "ano": 2023
-    },
-    {
-        "placa": "JSS-1214",
-        "cor": "Preto",
-        "modelo": "HB20",
-        "ano": 2019
+carros = []
+
+def cadastras_carro():
+    placa = input("Digite a placa: ")
+    cor = input("Digite a cor: ")
+    modelo = input("Digite o modelo: ")
+    ano = int(input("Digite o ano: "))
+
+    carro = {
+        "placa": placa,
+        "cor": cor,
+        "modelo": modelo,
+        "ano": ano
     }
-]
+
+    carros.append(carro)
 
 def listar_carros():
     print("\n--------------------- LISTA DE CARROS ---------------------")
