@@ -14,6 +14,7 @@ def cadastras_carro():
     }
 
     carros.append(carro)
+    print("\nCarro cadastrado com êxito.")
 
 def listar_carros():
     print("\n--------------------- LISTA DE CARROS ---------------------")
@@ -37,7 +38,7 @@ while True:
     opcao_escolhida = input("Escolha uma opção: ")
 
     if opcao_escolhida == "1":
-        print("\nAinda vamos implementar essa funcionalidade")
+        cadastras_carro()
     elif opcao_escolhida == "2":
         listar_carros()
     elif opcao_escolhida == "3":
