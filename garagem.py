@@ -34,6 +34,15 @@ def listar_carros():
 
     print("-----------------------------------------------------------")
 
+def editar_carro():
+    placa = input("Digite a placa do carro a ser editado: ")
+    
+    carro_existente == encontar_carro(placa)
+
+    if carro_existente == None:
+        print("\nNão foi encontrado um carro com essa placa.")
+        return
+
 def deletar_carro():
     placa = input("Digite a placa do carro a ser deletada: ")
 
