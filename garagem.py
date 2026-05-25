@@ -50,6 +50,9 @@ def cadastras_carro():
     print("\nCarro cadastrado com êxito.")
 
 def listar_carros():
+    if len(carros) == 0:
+        print("\nNenhum carro cadastrado.")
+
     print("\n--------------------- LISTA DE CARROS ---------------------")
 
     for carro in carros:
@@ -96,7 +99,8 @@ def editar_carro():
         try:
             dicionario_atualizacao["ano"] = int(novo_ano)
         except ValueError:
-            print("\nAno inválido. Digite apenas números.")
+            print("\nAno inválido. Alterações ignoradas.")
+            return
 
     carro_existente["placa"] = dicionario_atualizacao["placa"]
     carro_existente["cor"] = dicionario_atualizacao["cor"]
