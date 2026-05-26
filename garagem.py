@@ -79,7 +79,7 @@ def editar_carro():
     print("\nPressione Enter para manter o valor atual.")
 
     nova_placa = input(f"Placa existente: {carro_existente["placa"]}. Nova placa: ").strip()
-    if len(nova_placa) > 0:
+    if len(nova_placa) > 0 and (nova_placa.lower() != carro_existente["placa"].lower()):
         if encontar_carro(nova_placa) != None:
             print("\nJa existe um outro carro com essa placa.")
             return
